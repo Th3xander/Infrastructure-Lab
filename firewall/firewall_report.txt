@@ -1,0 +1,59 @@
+
+===================== FIREWALL_REPORT ======================================
+
+
+# FIREWALL STATUS 
+Status: active
+
+To ----------------------Action -------------- From 
+----------------------------------------------------------
+22/tcp ------------------------- ALLOW -------------------
+Anywhere -----------------------------------------
+80/tcp ----------------------------- ALLOW -------------- Anywhere 
+
+
+
+# DEFAULT POLICY 
+
+Status: active 
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed) 
+
+To                                Action                      From 
+----                              --------                    -----
+
+22/tcp                                                                    
+
+
+# ALLOWED PORTS
+PORT (22)
+PORT (443)
+
+# DENIED PORTS 
+PORT (80)
+
+# SSH RULE
+
+
+# HTTP RULE
+80
+
+# HTTPS RULE
+443
+
+
+# LISTENING SERVICES 
+
+Netid     State    Recv-Q    Send-Q   Local Address:Port     Peer_Address: Port Process
+
+tcp LISTEN 0      128                0.0.0.0:22
+0.0.0.0:*
+
+tcp LISTEN 0       511                0.0.0.0:80
+0.0.0.0:*
+
+tcp LISTEN 0       511                 0.0.0.0:443
+0.0.0.0:*
+
+
+====================== END OF THE REPORT ==================================================

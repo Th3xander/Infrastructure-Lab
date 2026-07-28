@@ -1,0 +1,50 @@
+=====================STORAGE REPORT=========================================
+
+# OUTPUT SUMMARY OF (df -h)
+
+Total Disk Usage: 16GB 
+Used Space: 6GB 
+Available Space: 8.8GB 
+
+
+# OUTPUT SUMMARY OF (lsblk)
+sda 
+| --- sda1
+|  -----sda2
+|   -------sda3
+	
+# FILESYSTEM TYPE 
+ext4
+tmpfs
+
+
+
+# LARGEST DIRECTORIES 
+user directories
+log directories
+
+
+
+# ROOT PARTITION 
+
+sda1 , sda2, sda 3
+
+
+
+# MOUNT INFORMATION 
+tmps, run dev
+
+
+
+# FREE DISK SPACE 
+8.8GB 
+
+
+# INODE USAGE
+The free inode avalable: 2,406,521
+
+
+
+
+
+================= END OF THE REPORT ====================================================
