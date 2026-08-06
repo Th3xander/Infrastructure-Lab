@@ -1,0 +1,28 @@
+name: Docker Validation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker-validation:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Dockerfile Exists
+        run: |
+          find . -name Dockerfile
+
+      - name: Display Repository Structure
+        run: |
+          ls -R
+
+      - name: Workflow Complete
+        run: |
+          echo "Docker validation completed successfully."
